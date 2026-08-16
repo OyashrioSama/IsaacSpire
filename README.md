@@ -69,19 +69,6 @@ Introduces **Isaac** as a new playable character in Slay the Spire 2.
 - 补丁：Harmony 2.x
 
 
-## 项目结构
-
-IsaacSpire/
-├── IsaacSpireCode/
-│   ├── Cards/          # 15 张卡牌
-│   ├── Powers/         # 4 个 Power
-│   ├── DamageTypes/    # 泪弹伤害类型
-│   └── Characters/     # 角色 & 卡池
-├── IsaacSpire/         # Godot 资源（images / localization）
-├── IsaacSpire.csproj
-└── IsaacSpire.json     # Mod Manifest
-
-
 ## 待完成
 
 - 已完成卡牌的测试与修改
