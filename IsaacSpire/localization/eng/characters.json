@@ -1,0 +1,21 @@
+{
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.aromaPrinciple": "[sine][blue]A clean template is ready for a new run.[/blue][/sine]",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.banter.alive.endTurnPing": "Turn complete.",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.banter.dead.endTurnPing": "I am out for now.",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.cardsModifierDescription": "Template Character cards can now appear in rewards and shops.",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.cardsModifierTitle": "Template Cards",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.defeatMessage": "The template still needs a little tuning.",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.description": "A sample character used to verify the RitsuLib template project.\nReplace this text with your own character concept after copying the template.",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.eventDeathPrevention": "Template Character keeps going.",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.flavor": "A clean template waiting to become a new adventure.",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.goldMonologue": "This gold is enough to start testing.",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.possessiveAdjective": "their",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.pronounObject": "them",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.pronounPossessive": "theirs",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.pronounSubject": "they",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.selectMessage": "Template Character is ready.",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.title": "Template Character",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.titleObject": "Template Character",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.unlockText": "Complete a run as [pink]{Prerequisite}[/pink] to unlock this character.",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_SPIRE_CHARACTER.victoryMessage": "Template verification complete."
+}

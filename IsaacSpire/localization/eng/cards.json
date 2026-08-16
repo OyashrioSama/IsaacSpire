@@ -1,0 +1,8 @@
+{
+  "ISAAC_SPIRE_CARD_ISAAC_SPIRE_STRIKE.title": "Template Strike",
+  "ISAAC_SPIRE_CARD_ISAAC_SPIRE_STRIKE.description": "Deal {Damage:diff()} damage.",
+  "ISAAC_SPIRE_CARD_ISAAC_SPIRE_STRIKE.smartDescription": "Deal {Damage:diff()} damage.",
+  "ISAAC_SPIRE_CARD_ISAAC_SPIRE_DEFEND.title": "Template Defend",
+  "ISAAC_SPIRE_CARD_ISAAC_SPIRE_DEFEND.description": "Gain {Block:diff()} Block.",
+  "ISAAC_SPIRE_CARD_ISAAC_SPIRE_DEFEND.smartDescription": "Gain {Block:diff()} Block."
+}

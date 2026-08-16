@@ -1,0 +1,21 @@
+{
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.aromaPrinciple": "[sine][blue]新的旅程，从一份干净模板开始。[/blue][/sine]",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.banter.alive.endTurnPing": "嗝屁猫在哪里……",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.banter.dead.endTurnPing": "……",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.cardsModifierDescription": "以撒的卡牌现在会出现在奖励和商店中。",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.cardsModifierTitle": "以撒卡牌",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.defeatMessage": "又一次失败……",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.description": "来自地下室的小男孩。\n依靠眼泪与幻想战斗。",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.eventDeathPrevention": "为了我的朋友们，我必须活下去！",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.flavor": "一份干净的模板，等待被改造成新的冒险。",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.goldMonologue": "老爸会把这些输得精光",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.possessiveAdjective": "他的",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.pronounObject": "他",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.pronounPossessive": "他的",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.pronounSubject": "他",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.selectMessage": "以撒已经准备好踏上新的旅途。",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.title": "以撒",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.titleObject": "以撒",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.unlockText": "用[pink]{Prerequisite}[/pink]进行一局游戏来解锁这个角色。",
+  "ISAAC_SPIRE_CHARACTER_ISAAC_CHARACTER.victoryMessage": "妈妈……？"
+}

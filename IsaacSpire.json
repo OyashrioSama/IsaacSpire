@@ -1,0 +1,18 @@
+{
+  "id": "IsaacSpire",
+  "name": "IsaacSpire",
+  "pck_name": "IsaacSpire",
+  "author": "KeyuanChen",
+  "description": "Add Isaac and his items to Slay the Spire2",
+  "version": "0.0.0",
+  "has_pck": true,
+  "has_dll": true,
+  "affects_gameplay": true,
+  "min_game_version": "0.106.0",
+  "dependencies": [
+    {
+      "id": "STS2-RitsuLib",
+      "version": "0.5.11"
+    }
+  ]
+}
