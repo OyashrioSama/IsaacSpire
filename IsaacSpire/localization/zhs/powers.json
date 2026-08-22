@@ -1,14 +1,27 @@
 {
-    "ISAAC_SPIRE_POWER_PIETY_POWER.description": "下一次你受到未被格挡的伤害时，将其降为90%",
-    "ISAAC_SPIRE_POWER_PIETY_POWER.smartDescription": "下[blue]{Amount}[/blue]次你受到未被格挡的伤害时，将其降为90%",
+    "ISAAC_SPIRE_POWER_PIETY_POWER.description": "下一次你受到未被格挡的伤害时，将其降为90%。",
+    "ISAAC_SPIRE_POWER_PIETY_POWER.smartDescription": "下[blue]{Amount}[/blue]次你受到未被格挡的伤害时，将其降为90%。",
     "ISAAC_SPIRE_POWER_PIETY_POWER.title": "虔诚",
-    "ISAAC_SPIRE_POWER_GRACE_AURA_POWER.description": "在你的回合结束时，获得1层虔诚",
+    "ISAAC_SPIRE_POWER_GRACE_AURA_POWER.description": "在你的回合结束时，获得1层虔诚。",
     "ISAAC_SPIRE_POWER_GRACE_AURA_POWER.smartDescription": "在你的回合结束时，获得[blue]{Amount}[/blue]层虔诚。",
     "ISAAC_SPIRE_POWER_GRACE_AURA_POWER.title": "恩典光环",
-    "ISAAC_SPIRE_POWER_STIGMA_AWAKENING_POWER.description": "每当获得虔诚时，获得1点力量",
+    "ISAAC_SPIRE_POWER_STIGMA_AWAKENING_POWER.description": "每当获得虔诚时，获得1点力量。",
     "ISAAC_SPIRE_POWER_STIGMA_AWAKENING_POWER.smartDescription": "每当获得虔诚时，获得[blue]{Amount}[/blue]点力量。",
     "ISAAC_SPIRE_POWER_STIGMA_AWAKENING_POWER.title": "圣痕觉醒",
-    "ISAAC_SPIRE_POWER_DIVINE_ECHO_POWER.description": "每当获得虔诚时，额外获得1层虔诚",
+    "ISAAC_SPIRE_POWER_DIVINE_ECHO_POWER.description": "每当获得虔诚时，额外获得1层虔诚。",
     "ISAAC_SPIRE_POWER_DIVINE_ECHO_POWER.smartDescription": "每当获得虔诚时，额外获得[blue]{Amount}[/blue]层虔诚。",
-    "ISAAC_SPIRE_POWER_DIVINE_ECHO_POWER.title": "神圣回响"
+    "ISAAC_SPIRE_POWER_DIVINE_ECHO_POWER.title": "神圣回响",
+    "ISAAC_SPIRE_POWER_SOUL_HEART_POWER.description": "跨战斗保留。为你抵挡1点伤害。",
+    "ISAAC_SPIRE_POWER_SOUL_HEART_POWER.smartDescription": "跨战斗保留。为你抵挡[blue]{Amount}[/blue]点伤害。",
+    "ISAAC_SPIRE_POWER_CHARIOT_POWER.title": "战车",
+    "ISAAC_SPIRE_POWER_CHARIOT_POWER.description": "本回合内你不能打出攻击牌，反弹所有伤害。",
+    "ISAAC_SPIRE_POWER_CHARIOT_POWER.smartDescription": "[blue]{Amount}[/blue]回合内你不能打出攻击牌，反弹所有伤害。",
+    "ISAAC_SPIRE_POWER_FLY_POWER.title": "飞行",
+    "ISAAC_SPIRE_POWER_FLY_POWER.description": "本回合内受到的伤害减少[gold]50%[/gold]。",
+    "ISAAC_SPIRE_POWER_FLY_POWER.smartDescription": "[blue]{Amount}[/blue]回合内受到的伤害减少[gold]50%[/gold]。",
+    "ISAAC_SPIRE_POWER_SOUL_HEART_POWER.title": "魂心",
+    "ISAAC_SPIRE_POWER_SOUL_BLACK_POWER.description": "跨战斗保留。为你抵挡1点伤害。你每失去1点黑心，对所有敌人造成1点伤害。",
+    "ISAAC_SPIRE_POWER_SOUL_BLACK_POWER.smartDescription": "跨战斗保留。为你抵挡[blue]{Amount}[/blue]点伤害。你每失去1点黑心，对所有敌人造成1点伤害。",
+    "ISAAC_SPIRE_POWER_SOUL_BLACK_POWER.title": "黑心"
+
 }

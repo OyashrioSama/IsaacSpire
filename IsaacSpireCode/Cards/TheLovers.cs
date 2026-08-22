@@ -1,57 +1,52 @@
 using IsaacSpire.Characters;
 using IsaacSpire.Powers;
+using IsaacSpire.Scripts;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.ValueProps;
 using STS2RitsuLib.Interop.AutoRegistration;
 using STS2RitsuLib.Scaffolding.Content;
 
 namespace IsaacSpire.Cards;
 
 [RegisterCard(typeof(IsaacCardPool))]
-[RegisterCharacterStarterCard(typeof(IsaacCharacter), 1)]
-public sealed class Pray : ModCardTemplate
+public sealed class TheLovers : ModCardTemplate
 {
-    private const int BaseEnergyCost = 1;
+    private const int BaseEnergyCost = 0;
     private const CardType CardKind = CardType.Skill;
-    private const CardRarity CardRarityValue = CardRarity.Basic;
+    private const CardRarity CardRarityValue = CardRarity.Token;
     private const TargetType CardTarget = TargetType.Self;
     private const bool ShowInCardLibrary = true;
-
-    public override bool GainsBlock => true;
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
 
     public override CardAssetProfile AssetProfile => new(
         PortraitPath: $"{Entry.ResPath}/images/cards/{GetType().Name}.png");
 
-    protected override HashSet<CardTag> CanonicalTags => new();
+    protected override HashSet<CardTag> CanonicalTags => new() { CardTags.Tarot };
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new BlockVar(5m, ValueProp.Move),
-        new PowerVar<PietyPower>(1m)
+        new HealVar(4m)
     ];
 
     protected override IEnumerable<IHoverTip> AdditionalHoverTips =>
     [
-        HoverTipFactory.FromPower<PietyPower>(),
+        HoverTipFactory.FromPower<SoulHeartPower>(),
     ];
 
-    public Pray() : base(BaseEnergyCost, CardKind, CardRarityValue, CardTarget, ShowInCardLibrary)
+    public TheLovers() : base(BaseEnergyCost, CardKind, CardRarityValue, CardTarget, ShowInCardLibrary)
     {
     }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<PietyPower>(choiceContext, Owner.Creature, DynamicVars["PietyPower"].BaseValue, Owner.Creature, this);
-        await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
+        await CreatureCmd.Heal(Owner.Creature, DynamicVars.Heal.BaseValue);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(2m);
-        DynamicVars["PietyPower"].UpgradeValueBy(1m);
+        DynamicVars.Heal.UpgradeValueBy(2);
     }
 }

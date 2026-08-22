@@ -1,8 +1,12 @@
 using System.Reflection;
+using IsaacSpire.Patches;
+using IsaacSpire.Resources;
+using IsaacSpire.Utils;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
 using STS2RitsuLib;
 using STS2RitsuLib.Interop;
+using STS2RitsuLib.Patching.Core;
 using Logger = MegaCrit.Sts2.Core.Logging.Logger;
 
 namespace IsaacSpire;
@@ -10,8 +14,6 @@ namespace IsaacSpire;
 [ModInitializer(nameof(Initialize))]
 public partial class Entry
 {
-    // ModId 需要和 IsaacSpire.json 里的 id 保持一致。
-    // res://IsaacSpire/... 里的 IsaacSpire 是 PCK 资源目录，不是 C# namespace。
     public const string ModId = "IsaacSpire";
     public const string ResPath = $"res://{ModId}";
 
@@ -21,18 +23,42 @@ public partial class Entry
     {
         var assembly = Assembly.GetExecutingAssembly();
 
-        // 以下示例默认已经在 Entry.Initialize() 中调用了
-        // RitsuLibFramework.EnsureGodotScriptsRegistered(...) 和
-        // ModTypeDiscoveryHub.RegisterModAssembly(...)，否则自动注册不会生效。
-        //
-        // Godot C# 脚本注册只负责让 pck 中的脚本类型能被 Godot 找到。
-        // 这一步和 RitsuLib 的内容自动注册不是同一件事，两个都需要保留。
         RitsuLibFramework.EnsureGodotScriptsRegistered(assembly, Logger);
-
-        // 自动注册扫描会读取当前程序集里的 RegisterCard/RegisterRelic 等 attribute。
-        // 新增内容类后，只要 attribute 写对，通常不需要在入口里手动逐个注册。
         ModTypeDiscoveryHub.RegisterModAssembly(ModId, assembly);
 
+        LogHelper.Log("========== IsaacSpire 初始化开始 ==========");
+
+        try
+        {
+            IsaacResources.Register();
+            LogHelper.Log($"IsaacResources 注册完成");
+        }
+        catch (Exception ex)
+        {
+            LogHelper.LogError("注册失败", ex);
+        }
+
+        // ============ 注册伤害拦截补丁 ============
+        try
+        {
+            var patcher = RitsuLibFramework.CreatePatcher(ModId, "damage-patches");
+            patcher.RegisterPatch<CreatureDamagePatch>();
+
+            if (!patcher.PatchAll())
+            {
+                LogHelper.LogError("【伤害拦截】补丁注册失败");
+            }
+            else
+            {
+                LogHelper.Log("【伤害拦截】补丁注册成功");
+            }
+        }
+        catch (Exception ex)
+        {
+            LogHelper.LogError("【伤害拦截】补丁注册失败", ex);
+        }
+
+        LogHelper.Log("========== IsaacSpire 初始化完成 ==========");
         Logger.Info("IsaacSpire initialized.");
     }
 }
