@@ -8,7 +8,7 @@ Introduces **Isaac** as a new playable character in Slay the Spire 2.
 ## 角色设定
 
 - 心之容器替换为 25 血/颗，初始 75 血
-- 核心资源：虔诚（Piety），上限 5 层，可管理的局内资源
+- 核心资源：虔诚（Piety），可管理的局内资源
 
 
 ## 已完成工作
